@@ -1,2 +1,4 @@
 FROM python
-CMD ['python',' simple_py.py']
+RUN mkdir /prog
+COPY mv simple_py.py /prog/
+CMD ['python',' /prog/simple_py.py']
